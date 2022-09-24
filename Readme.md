@@ -20,7 +20,7 @@ Inizieremo semplicemente dall'URL di google maps dove abbiamo già applicato la 
 
 
 
-![asstGoogleMaps](.\img\asstGoogleMaps.jpg)
+![asstGoogleMaps](./img/asstGoogleMaps.jpg)
 
 
 
@@ -28,7 +28,7 @@ Analizzando tutti i link presenti in questa pagina, della quale dobbiamo fare pr
 
 Otterremo ciò con una semplice classe in PYHTON qui schematizzata:
 
-![classAsstUrlRetrieve](.\img\classAsstUrlRetrieve.jpg)
+![classAsstUrlRetrieve](./img/classAsstUrlRetrieve.jpg)
 
 che con un paio di semplici funzioni permette di recuperare gli URLs e di memorizzarli su PC.
 
@@ -44,7 +44,7 @@ Memorizziamo l'url della pagina da cui si possono scaricare i file con i dati re
 
 Per questa fase utilizziamo una seconda classe così composta.
 
-![classAsstGoogleMapScraper](.\img\classAsstGoogleMapScraper.jpg)
+![classAsstGoogleMapScraper](./img/classAsstGoogleMapScraper.jpg)
 
 che dapprima carica la lista dei links trovati al passo precedente per l'accesso ai portali aziendali, utilizza delle stringhe per le interrogazioni sui TAG delle pagine web, utilizza strutture dati per la memorizzazione di tutte le liste di link trovati per poi giungere all'unico link a noi utile e salvarlo nuovamente in formato tabellare.
 
@@ -54,7 +54,7 @@ che dapprima carica la lista dei links trovati al passo precedente per l'accesso
 
 Il seguente diagramma illustra la struttura (file system) del processo.
 
-![albero](.\img\albero.jpg)
+![albero](./img/albero.jpg)
 
 1. nella cartella `./DATA` sono contenti i file con i dati di alcune aziende sanitarie, ho scaricato solo quelli in formato tabellare e non PDF, per pigrizia più che altro. Un passaggio seguente sarebbe di integrare l'algoritmo con la verifica e lo scarico in automatico di tutti i file dati, di tutte le aziende;
 2. nella cartella `./DRIVER` sono contenuti i file con i driver per lo scraping su diversi browsers;
